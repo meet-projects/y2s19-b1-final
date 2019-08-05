@@ -16,13 +16,13 @@ session = DBSession()
 
 def add_Flavor(name, add_ons, ice_cream_flavor, user_id):
     print("Added a flavor!")
-    new_ice_cream = Flavor(name=name, add_ons=add_ons, ice_cream_flavor=ice_cream_flavor, user_id=parent_id)
+    new_ice_cream = Flavor(name=name, add_ons=add_ons, ice_cream_flavor=ice_cream_flavor)
     session.add(new_ice_cream)
     session.commit()
 
-def add_user(name,email):
+def add_user(name,email, flavor_id):
     """Add a user to the DB."""
-    user = User(username=name, email_address=email)
+    user = User(username=name, email_address=email, flavor_id=flavor_id)
     session.add(user)
     session.commit()
 
