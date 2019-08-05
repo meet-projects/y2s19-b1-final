@@ -20,11 +20,11 @@ def create_flavor():
 def vote():
 	return render_template('voting.html')
 
-@app.route('/submit_flavor')
+@app.route('/submit_flavor', methods= ['GET', 'POST'])
 def submit_flavor():
 	return render_template("submit_flavor.html")
 
-@app.route('/submit')
+@app.route('/submit', methods=['GET', 'POST'])
 def submit():
 	return render_template("thanku.html")
 
