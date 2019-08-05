@@ -14,7 +14,7 @@ def home():
 
 @app.route('/voting')
 def vote():
-	return render_template('home.html')
+	return render_template('voting.html')
 
 
 
