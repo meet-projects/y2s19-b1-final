@@ -7,80 +7,41 @@
 
     <body>
        <form>
-       		<p>option1:{{name_1}}</p>
-       		<button></button>
-       		<input type="radio " name="" value="">
-       		<p>option2:{{name_2}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option3:{{name_3}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option4:{{name_4}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option5:{{name_5}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option6:{{name_6}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option7:{{name_7}}</p>
-       		<button></button>
-<<<<<<< HEAD
-       		<input type="radio " name="">
-       		<p>option8:{{name_8}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option1:{{name_9}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option9:{{name_10}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option10:{{name_11}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-       		<p>option11:{{name_12}}</p>
-       		<button></button>
-       		<input type="radio " name="">
-=======
-       		<input type="checkbox" name="">
-       		<p>option8:{{name_1}}</p>
-       		<button></button>
-       		<input type="checkbox" name="">
-       		<p>option1:{{name_1}}</p>
-       		<button></button>
-       		<input type="checkbox" name="">
-       		<p>option9:{{name_1}}</p>
-       		<button></button>
-       		<input type="checkbox" name="">
-       		<p>option10:{{name_10}}</p>
-       		<button></button>
-       		<input type="checkbox" name="">
-       		<p>option11:{{name_11}}</p>
-       		<button></button>
-       		<input type="checkbox" name="">
+        <!-- action has to become submit vote intead of flavor for later -->
+          <form action = "/submit_flavor" method = "POST">
 
->>>>>>> 6e49752e5b1f739983f7a5c19bb28cbe76008975
-       		<p>option12:{{name_12}}</p>
+
+       		<input type="radio" name="option" value ="option1">option 1 
        		<button></button>
-       		<input type="radio " name="">
-       		<p>option13:{{name_13}}</p>
+
+       		<input type="radio" name="option" value="option2">option2
        		<button></button>
-       		<input type="radio " name="">
-       		<p>option14:{{name_14}}</p>
+
+       		<input type="radio" name="option">option3
        		<button></button>
-       		<input type="radio " name="">
-       		<p>option15:{{name_15}}</p>
+
+       		<input type="radio" name="option">option4
        		<button></button>
-       		<input type="radio " name="">
-       		<p>option16:{{name_16}}</p>
+
+       		<input type="radio" name="option">option5
        		<button></button>
-       		<input type="radio " name="">
-       		<p>option17:{{name_17}}</p>
+
+       		<input type="radio" name="option">option6
        		<button></button>
-       		<input type="radio " name="">
+
+       		<input type="radio" name="option">option7
+       		<button></button>
+       		
+          <input type="radio" name="option">option8
+       		<button></button>
+
+       		<input type="radio" name="option">option9
+       		<button></button>
+       		<input type="radio" name="option" value="option">option10 
+       		<button></button>
+       		<input type='submit' value="Submit">
+ <p><a href="{{url_for('submit_flavor')}}">to submit flavor</p>
        </form>
+      
     </body>
 </html>
