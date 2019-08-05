@@ -11,6 +11,8 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('home.html')
+def create_flavor():
+	return render_template("create_flavor.html")
 
 @app.route('/vote')
 def vote():
