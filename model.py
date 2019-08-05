@@ -20,7 +20,8 @@ class Flavor(Base):
     __tablename__ = "flavors"
     id = Column(Integer, primary_key = True)
     parent_id = Column(Integer, ForeignKey('users.id'))
-    ingridents = Column(String)
+    add_ons = Column(String)
+    ice_cream_flavor =Column(String)
     name = Column(String)
 
     def __repr__(self):
