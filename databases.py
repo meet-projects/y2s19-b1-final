@@ -14,13 +14,18 @@ session = DBSession()
 
 # Your database functions are located under here (querying, adding items, etc.)
 
-# Example of adding a student:
-def add_student(student_name, student_year):
-    print("Added a student!")
-    student = Student(name=student_name, year=student_year)
-    session.add(student)
+def add_Flavor(name, ingridents):
+    print("Added a flavor!")
+    new_ice_cream = Flavor(name=flavor_name, ingrients=flavor_ingridents)
+    session.add(new_ice_cream)
     session.commit()
 
-def get_all_students():
-    students = session.query(Student).all()
-    return students
+def add_user(name,email):
+    """Add a user to the DB."""
+    user = User(username=name, email_address=email)
+    session.add(user)
+    session.commit()
+
+def get_all_flavors():
+    ice_cream = session.query(Flavor).all()
+    return ice_cream
