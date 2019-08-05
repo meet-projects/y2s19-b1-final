@@ -12,7 +12,7 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
     
-@app.route('/new_flavor')
+@app.route('/new_flavor', methods= ['GET', 'POST'])
 def create_flavor():
 	return render_template("create_flavor1.html")
 
@@ -24,8 +24,10 @@ def vote():
 def submit_flavor():
 	return render_template("submit_flavor.html")
 
- 
-@app.route('/submit' , methods=['GET', 'POST'])
+@app.route('/thanku', methods= ['GET', 'POST'])
+def thanku():
+	return render_template('thanku.html')
+
 
 @app.route('/submit', methods=['GET', 'POST'])
 
