@@ -5,20 +5,35 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
+<<<<<<< HEAD
+        <div>
+        <form action = "/submit_flavor" method = "post">
+=======
         <h1> 
 
         <form action = "/submit_flavor" method = "POST">
+>>>>>>> 6e49752e5b1f739983f7a5c19bb28cbe76008975
             <br>
         <form action = "/new_flavor" method = "POST">
 
+
             Pick your flavor here!
-            <input type="radio" name = "flavor" value="flavor">strawberry
+            <input type="radio" name = "flavor" value="strawberry">strawberry
+            <input type="radio" name = "flavor" value="vanilla">vanilla
+            <input type="radio" name = "flavor" value="chocolate">chocolate
+            <input type="radio" name = "flavor" value="banana">banana
+            <input type="radio" name = "flavor" value="flavor">flavor
+            <input type="radio" name = "flavor" value="flavor">flavor
             <br>
         </form>
         <form action = "/new_flavor" method="POST">
             Pick you add ons here!
             <input type="radio" name="add_on" value="add_on"> cookie dough
+            <input type="radio" name="add_on" value="add_on">fudge brownies
+            <input type="radio" name="add_on" value="add_on"> hazelnut
+            <input type="radio" name="add_on" value="add_on">almonds
             <br>
+            <input type='submit' value="Submit">
         </form>
     </form>
       <!--   <img src="https://media1.giphy.com/media/3Xyr8g10g5TWCwZ7aI/source.gif" alt="Image"> 
@@ -26,7 +41,7 @@
         <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-08/26/3/enhanced/webdr05/anigif_enhanced-21648-1440573942-4.gif" alt="Image">
         <img src="https://www.villagevoice.com/wp-content/uploads/2009/04/cone.gif" alt="Image"> -->
          
-         </h1>
+         </div>
 
         <p><a href="{{url_for('submit_flavor')}}">to submit flavor</p>
     </body>

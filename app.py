@@ -24,10 +24,20 @@ def vote():
 def submit_flavor():
 	return render_template("submit_flavor.html")
 
+<<<<<<< HEAD
 @app.route('/thanku', methods= ['GET', 'POST'])
 def thanku():
 	return render_template('thanku.html')
 
+=======
+<<<<<<< HEAD
+@app.route('/submit', methods=['GET', 'POST'])
+
+def submit():
+	return render_template("thanku.html")
+=======
+>>>>>>> 6e49752e5b1f739983f7a5c19bb28cbe76008975
+>>>>>>> df7c1429e9a5494caf418bc619da32743c01c636
 
 
 
