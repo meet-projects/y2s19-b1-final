@@ -12,7 +12,7 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('vote')
+@app.route('voting')
 def vote():
 	return render_template('home.html')
 
