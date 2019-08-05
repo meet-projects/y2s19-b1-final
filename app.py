@@ -21,7 +21,8 @@ def vote():
 	return render_template('voting.html')
 
 @app.route('/submit_flavor', methods= ['GET', 'POST'])
-def submit_flavor():
+def submit_flavor(name, add_ons, ice_cream_flavor):
+	add_Flavor(name, add_ons, ice_cream_flavor)
 	return render_template("submit_flavor.html")
 
 @app.route('/thanku', methods= ['GET', 'POST'])
