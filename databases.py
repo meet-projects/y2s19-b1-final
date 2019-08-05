@@ -20,9 +20,9 @@ def add_Flavor(name, add_ons, ice_cream_flavor):
     session.add(new_ice_cream)
     session.commit()
 
-def add_user(name,email):
+def add_user(name,email, flavor):
     """Add a user to the DB."""
-    user = User(username=name, email_address=email)
+    user = User(username=name, email_address=email, flavor=Flavor())
     session.add(user)
     session.commit()
 
