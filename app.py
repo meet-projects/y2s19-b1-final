@@ -24,7 +24,6 @@ def vote():
 def submit_flavor():
 	return render_template("submit_flavor.html")
 
-
 @app.route('/thanku', methods= ['GET', 'POST'])
 def thanku():
 	return render_template('thanku.html')
