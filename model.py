@@ -22,7 +22,7 @@ class Flavor(Base):
     id = Column(Integer, primary_key = True)
     children = relationship("User")
     add_ons = Column(String)
-    ice_cream_flavor =Column(String)
+    flavor =Column(String)
     name = Column(String)
 
     def __repr__(self):

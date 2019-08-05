@@ -14,6 +14,7 @@ def home():
     
 @app.route('/new_flavor', methods= ['GET', 'POST'])
 def create_flavor():
+	add_Flavor(request.form('name'),request.form('flavor'),request.form('add_ons'))
 	return render_template("create_flavor1.html")
 
 @app.route('/vote')
@@ -21,8 +22,8 @@ def vote():
 	return render_template('voting.html')
 
 @app.route('/submit_flavor', methods= ['GET', 'POST'])
-def submit_flavor(name, add_ons, ice_cream_flavor):
-	add_Flavor(name, add_ons, ice_cream_flavor)
+def submit_flavor():
+	
 	return render_template("submit_flavor.html")
 
 @app.route('/thanku', methods= ['GET', 'POST'])
