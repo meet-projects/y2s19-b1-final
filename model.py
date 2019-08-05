@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy import create_engine
@@ -11,6 +11,7 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True)
+    children = relationship("Flavor")
     username = Column(String)
     email = Column(String)
 
@@ -18,6 +19,7 @@ class User(Base):
 class Flavor(Base):
     __tablename__ = "flavors"
     id = Column(Integer, primary_key = True)
+    parent_id = Column(Integer, ForeignKey('users.id'))
     ingridents = Column(String)
     name = Column(String)
 

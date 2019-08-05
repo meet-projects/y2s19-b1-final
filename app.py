@@ -14,6 +14,21 @@ def home():
 def create_flavor():
 	return render_template("create_flavor.html")
 
+@app.route('/vote')
+def vote():
+	return render_template('voting.html')
+
+
+
+
+
+
+
+
+
+
+
+
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
