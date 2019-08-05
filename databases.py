@@ -16,7 +16,7 @@ session = DBSession()
 
 def add_Flavor(name, add_ons, ice_cream_flavor, user_id):
     print("Added a flavor!")
-    new_ice_cream = Flavor(name=name, add_ons=add_ons, ice_cream_flavor=ice_cream_flavor, user_id=parent_id)
+    new_ice_cream = Flavor(name=name, add_ons=add_ons, ice_cream_flavor=ice_cream_flavor, user_id='users.id')
     session.add(new_ice_cream)
     session.commit()
 
