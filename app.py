@@ -1,4 +1,4 @@
-# Flask-related imports
+9# Flask-related imports
 from flask import Flask, render_template, url_for, redirect, request, session
 
 # Add functions you need from databases.py to the next line!
@@ -11,12 +11,15 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('home.html')
+    
+@app.route('/new_flavor')
 def create_flavor():
-	return render_template("create_flavor.html")
+	return render_template("create_flavor1.html")
 
 @app.route('/vote')
 def vote():
 	return render_template('voting.html')
+
 
 
 
