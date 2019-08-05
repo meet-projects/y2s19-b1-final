@@ -6,7 +6,10 @@
     </head>
 <body>
 
-<form action="/thanku" method="post">
+
+
+
+<form action="{{url_for('submit')}}" method="POST">
 	<br>
 	Please insert your information to save your flavor!
     <br>
@@ -15,11 +18,14 @@
     <br>
     Email Address
     <input type="text" name="email" placeholder="Email Address">
+
     <br> 
     <input type='submit' value="Submit">
 </form> 
- <p><a href="{{url_for('submit')}}"> submit</p>
 
+
+
+</form> 
 
 
 
