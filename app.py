@@ -24,6 +24,9 @@ def vote():
 def submit_flavor():
 	return render_template("submit_flavor.html")
 
+@app.route('/submit')
+def submit():
+	return render_template("thanku.html")
 
 
 
