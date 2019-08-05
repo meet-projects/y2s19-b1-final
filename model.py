@@ -8,11 +8,18 @@ Base = declarative_base()
 # Place your database schema code here
 
 # Example code:
-class Student(Base):
-    __tablename__ = "students"
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True)
+    username = Column(String)
+    email = Column(String)
+
+
+class Flavor(Base):
+    __tablename__ = "flavors"
     id = Column(Integer, primary_key = True)
+    ingridents = Column(String)
     name = Column(String)
-    year = Column(Integer)
 
     def __repr__(self):
-        return ("Student name: {}, Student year:{}".format(self.name, self.year))
+        return ("  {} is a ice cream flavor that contains:{}".format(self.name, self.ingridents))
