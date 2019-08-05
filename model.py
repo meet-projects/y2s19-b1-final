@@ -11,7 +11,7 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True)
-    flavors = relationship("Flavor")
+    children = relationship("Flavor")
     username = Column(String)
     email = Column(String)
 
@@ -19,7 +19,7 @@ class User(Base):
 class Flavor(Base):
     __tablename__ = "flavors"
     id = Column(Integer, primary_key = True)
-    parent_id = Column(Integer, ForeignKey('user.id'))
+    parent_id = Column(Integer, ForeignKey('users.id'))
     ingridents = Column(String)
     name = Column(String)
 
