@@ -43,7 +43,7 @@ def vote():
 
 @app.route('/submit', methods=['GET', 'POST'])
 def submit():
-	return render_template("submit_flavor.html")
+	return render_template("thanku.html")
 
 @app.route('/about')
 def about():
