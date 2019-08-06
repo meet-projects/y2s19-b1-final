@@ -32,6 +32,6 @@ def get_all_flavors():
     return ice_cream
 
 def submit_option(option,user_email):
-	vote = Vote(option=option, user_email=user_email)
+    vote = Vote(option=option, user_email=user_email)
     session.add(vote)
     session.commit()
