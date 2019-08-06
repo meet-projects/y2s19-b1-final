@@ -19,10 +19,6 @@ def create_flavor():
 		return render_template('submit_flavor.html')
 	return render_template("create_flavor1.html")
 
-@app.route('/vote')
-def vote():
-	return render_template('voting.html')
-
 @app.route('/submit_flavor', methods= ['GET', 'POST'])
 def submit_flavor():
 	if request.method == "POST":
@@ -34,22 +30,15 @@ def submit_flavor():
 def thanku():
 	return render_template('thanku.html')
 
+@app.route('/vote')
+def vote():
+	return render_template('voting.html')
+
 
 @app.route('/submit', methods=['GET', 'POST'])
 
 def submit():
 	return render_template("thanku.html")
-
-
-
-
-
-
-
-
-
-
-
 
 
 
