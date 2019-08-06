@@ -11,7 +11,6 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True)
-    
     flavor_id = Column(Integer, ForeignKey('flavors.id'))
     username = Column(String)
     email = Column(String)
