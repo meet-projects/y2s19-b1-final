@@ -30,10 +30,10 @@ def submit_flavor():
 def thanku():
 	return render_template('thanku.html')
 
-@app.route('/vote')
+@app.route('/vote', methods= ['GET', 'POST'])
 def vote():
 	if request.method == "POST":
-		submit_option(request.form[''],request.form[''])
+		submit_option(request.form['option'],request.form['user_email'])
 		return render_template('thanku.html')
 	return render_template('voting.html')
 
