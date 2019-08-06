@@ -37,7 +37,8 @@ def vote():
 	if request.method == "POST":
 		submit_option(request.form['option'],request.form['user_email'])
 		return render_template('thanku.html')
-	return render_template('voting.html')
+	flavors = get_all_flavors()
+	return render_template('voting.html', flavors = flavors)
 
 
 @app.route('/submit', methods=['GET', 'POST'])
