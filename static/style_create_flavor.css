@@ -13,13 +13,23 @@
 
 }
 
-div {
+#everything {
 	text-align: center;
 	background-color: #4dd7fa;
 	font-family: "Maiden Orange";
 	font-size:40px;
 	margin-left: 20%;
 	margin-right:20%;
+}
+
+#col1{
+	margin-left:0;
+	margin-right:50%;
+
+}
+#col2 {
+	margin-left:50%;
+	margin-right:0%;
 }
 
 #here {
