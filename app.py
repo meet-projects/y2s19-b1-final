@@ -43,6 +43,10 @@ def vote():
 def submit():
 	return render_template("thanku.html")
 
+@app.route('/about')
+def about():
+	return render_template("about_page.html")
+
 
 
 # Running the Flask app
