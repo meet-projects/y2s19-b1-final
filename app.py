@@ -2,7 +2,7 @@
 from flask import Flask, render_template, url_for, redirect, request, session
 
 # Add functions you need from databases.py to the next line!
-from databases import add_Flavor, add_user, get_all_flavors
+from databases import *
 
 # Starting the flask app
 app = Flask(__name__)
@@ -33,13 +33,12 @@ def thanku():
 @app.route('/vote', methods= ['GET', 'POST'])
 def vote():
 	if request.method == "POST":
-		submit_option(request.form['user_email'],request.form['option'])
+		submit_option(request.form['option'],request.form['user_email'])
 		return render_template('thanku.html')
 	return render_template('voting.html')
 
 
 @app.route('/submit', methods=['GET', 'POST'])
-
 def submit():
 	return render_template("thanku.html")
 

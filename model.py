@@ -27,10 +27,10 @@ class Flavor(Base):
     def __repr__(self):
         return ("  {} is a ice cream flavor that contains:{}".format(self.name, self.ingridents))
 
-class vote(Base):
+class Vote(Base):
 	"""docstring for vote"""
 	__tablename__="votes"
 	id = Column(Integer, primary_key=True)
-	user = Column(String)
+	user_email = Column(String)
 	option = Column(String)
 		
