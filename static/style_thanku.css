@@ -15,5 +15,11 @@
 
 body {
 	background-image: url("bg.png") ;
+	background-color:#4dd7fa;
+	font-family:"Maiden Orange";
+	text-align:center;
+	font-size:50px;
+	margin-left:15%;
+	margin-right:15%;
 	
 }
