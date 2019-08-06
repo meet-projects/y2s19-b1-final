@@ -1,0 +1,34 @@
+* {
+    /* Removes extra spacing from all elements on the page */
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+
+}
+
+h2 {
+	text-align: center;
+	background-color: #4dd7fa;
+	font-size:70px;
+	margin-left:10%;
+	margin-right:10%;
+
+}
+
+.name_space{
+	width:270px;
+	height:50px;
+	font-size:30px;
+}
+
+
+body {
+	background-image: url("bg.png") ;
+	
+}
