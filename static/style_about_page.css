@@ -1,1 +1,22 @@
+* {
+    /* Removes extra spacing from all elements on the page */
+    padding: 0;
+    margin: 0;
+}
 
+
+
+
+.center {
+
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+
+}
+
+p{
+	background-color: #4dd7fa;
+	font-family: "Maiden Orange";
+	text-align: center;
+}
