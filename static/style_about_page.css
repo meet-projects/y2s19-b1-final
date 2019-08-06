@@ -5,9 +5,7 @@
 }
 
 
-
-
-h1 {
+.center {
 
 	display: block;
 	margin-left: auto;
@@ -18,7 +16,7 @@ p{
 	background-color: #4dd7fa;
 	font-family: "Maiden Orange";
 	text-align: center;
-	font-size:70px;
+	font-size:50px;
 }
 
 h2 {
@@ -26,5 +24,17 @@ h2 {
 	background-color:#4dd7fa;
 	font-family:"Maiden Orange";
 	text-align:center;
-	font-size:100px;
+	font-size:70px;
+}
+
+
+#creating {
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+body {
+	background-image: url("bg.png") ;
+	
 }
