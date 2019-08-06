@@ -7,17 +7,24 @@
 
 
 
-.center {
+h1 {
 
 	display: block;
 	margin-left: auto;
   	margin-right: auto;
-
-}
+  }
 
 p{
 	background-color: #4dd7fa;
 	font-family: "Maiden Orange";
 	text-align: center;
+	font-size:70px;
+}
+
+h2 {
+
+	background-color:#4dd7fa;
+	font-family:"Maiden Orange";
+	text-align:center;
 	font-size:100px;
 }
