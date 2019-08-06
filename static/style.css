@@ -14,13 +14,22 @@
 
 #scoop {
 
-margin-left:10%;
+margin-left:7%;
+position: absolute;
+top: 170px;
 }
 
 #shop {
 	
-	margin-left: 60%;
+	margin-left: 80%;
+	position: absolute;
+	top: 180px;
 }
+
+
+
+
+
 
 body {
 	background-image: url("bg.png") ;
