@@ -1,0 +1,19 @@
+* {
+    /* Removes extra spacing from all elements on the page */
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+
+}
+
+
+body {
+	background-image: url("bg.png") ;
+	
+}

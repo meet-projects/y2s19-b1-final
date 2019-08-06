@@ -5,28 +5,44 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_create_flavor.css') }}">
     </head>
     <body>
+        <h1>
+             <img class="center" src="{{url_for('static',filename='benjerrylogo.gif')}}" alt="Image"> 
+        <br>
+            <img class="center" src="https://www.villagevoice.com/wp-content/uploads/2009/04/cone.gif" alt="Image">
+    </h1>
+    <br>
+    <br>
+    <br>
+    <br>
         <div>
         <br>
         <form action = "/new_flavor" method = "post">
-            enter the ice cream flavor name 
-            <input type="text" name="name" placeholder="here">
+            Enter the ice cream flavor name: 
+            <input type="text" name="name" placeholder="here" id="here">
+            <br>
             <br>
             Pick your flavor here!
-            
-            <input type="radio" name = "flavor" value="strawberry">strawberry
-            <input type="radio" name = "flavor" value="vanilla">vanilla
-            <input type="radio" name = "flavor" value="chocolate">chocolate
-            <input type="radio" name = "flavor" value="banana">banana
-            <input type="radio" name = "flavor" value="flavor">flavor
-            <input type="radio" name = "flavor" value="flavor">flavor
+
+            <br>
+            <br>
+            <input type="radio" name = "flavor" value="strawberry">Strawberry
+            <input type="radio" name = "flavor" value="vanilla">Vanilla
+            <input type="radio" name = "flavor" value="chocolate">Chocolate
+            <input type="radio" name = "flavor" value="banana">Banana
+            <input type="radio" name = "flavor" value="flavor">Peanut butter
+            <input type="radio" name = "flavor" value="flavor">Cookie cream
+            <br>
             <br>
             Pick you add ons here!
+            <br>
+            <br>
             <input type="radio" name="add_on" value="cookie dough"> cookie dough
             <input type="radio" name="add_on" value="fudge brownies">fudge brownies
-            <input type="radio" name="add_on" value="hazelnut"> hazelnut
-            <input type="radio" name="add_on" value="almonds">almonds
+            <input type="radio" name="add_on" value="hazelnut"> Waffle cones
+            <input type="radio" name="add_on" value="almonds">Caramel swirls
             <br>
-            <input type='submit' value="Submit">
+            <br>
+            <input type='submit' value="Submit" id="submit">
     </form>
       <!--   <img src="https://media1.giphy.com/media/3Xyr8g10g5TWCwZ7aI/source.gif" alt="Image"> 
         <img src="https://media2.giphy.com/media/1wQOwzKh7TKx4upFUT/source.gif"  alt="Image"> 
