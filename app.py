@@ -32,6 +32,9 @@ def thanku():
 
 @app.route('/vote')
 def vote():
+	if request.method == "POST":
+		submit_option(request.form[''],request.form[''])
+		return render_template('thanku.html')
 	return render_template('voting.html')
 
 
