@@ -5,8 +5,15 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_voting.css') }}">
     </head>
 
+
+  <img class="center" src="{{url_for('static',filename='benjerrylogo.gif')}}" alt="Image" id="logo"> 
+        
+        <img class="center" src="https://www.villagevoice.com/wp-content/uploads/2009/04/cone.gif" alt="Image" id="ice">
+
+
     <body>
         <!-- action has to become submit vote intead of flavor for later -->
+        <div id="vote">
           <form action = "/vote" method = "POST">
 
 
@@ -17,17 +24,19 @@
                   {% endfor %}
                   <br>
                   <br>
+                </form>
+                  <div id="info">
                   Please insert your information to save your choice!
                   <br>
                   First Name
-                  <input type="text" name="name" placeholder="First Name">
+                  <input type="text" name="name" placeholder="First Name" id="name">
                    <br>
                   Email Address
-                  <input type="text" name="user_email" placeholder="Email Address">
+                  <input type="text" name="user_email" placeholder="Email Address" id="email">
 
                   <br> 
-                  <input type='submit' value="Submit">
-
+                  <input type='submit' value="Submit" id="submit">
+                </div>
        </form>
       
     </body>

@@ -1,0 +1,52 @@
+* {
+    /* Removes extra spacing from all elements on the page */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background-image: url("bg.png") ;
+}
+#info {
+
+	text-align: center;
+  	background-color: #4dd7fa;
+  	margin-left: 25%; 
+  	margin-right:25%;
+  	font-size: 60px;
+  	font-family: "Maiden Orange";
+
+}
+#vote {
+	text-align: center;
+	font-family: "Maiden Orange";
+	font-size: 60px;
+
+}
+#logo {
+
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+#ice {
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+#submit {
+font-size: 30px;	
+font-family: "Maiden Orange";
+}
+
+#email{
+	width: 250px;
+	height: 30px;
+}
+
+#name{
+	width: 250px;
+	height: 30px;
+}
+
