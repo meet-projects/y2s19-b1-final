@@ -17,6 +17,8 @@ p{
 	font-family: "Maiden Orange";
 	text-align: center;
 	font-size:50px;
+	margin-left:21%;
+	margin-right:21%;
 }
 
 h2 {
@@ -25,6 +27,8 @@ h2 {
 	font-family:"Maiden Orange";
 	text-align:center;
 	font-size:70px;
+	margin-left:21%;
+	margin-right:21%;
 }
 
 
@@ -38,3 +42,4 @@ body {
 	background-image: url("bg.png") ;
 	
 }
+
