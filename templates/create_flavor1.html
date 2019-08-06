@@ -7,11 +7,12 @@
     <body>
         <div>
         <br>
-        <form action = "/new_flavor" method = "POST">
-
+        <form action = "/new_flavor" method = "post">
+            enter the  ice cream flavor name 
+            <input type="text" name="name" placeholder="here">
 
             Pick your flavor here!
-            <input type="text" name="name" placeholder="the name">
+            
             <input type="radio" name = "flavor" value="strawberry">strawberry
             <input type="radio" name = "flavor" value="vanilla">vanilla
             <input type="radio" name = "flavor" value="chocolate">chocolate
@@ -19,8 +20,6 @@
             <input type="radio" name = "flavor" value="flavor">flavor
             <input type="radio" name = "flavor" value="flavor">flavor
             <br>
-        </form>
-        <form action = "/new_flavor" method="POST">
             Pick you add ons here!
             <input type="radio" name="add_on" value="add_on"> cookie dough
             <input type="radio" name="add_on" value="add_on">fudge brownies
@@ -28,7 +27,6 @@
             <input type="radio" name="add_on" value="add_on">almonds
             <br>
             <input type='submit' value="Submit">
-        </form>
     </form>
       <!--   <img src="https://media1.giphy.com/media/3Xyr8g10g5TWCwZ7aI/source.gif" alt="Image"> 
         <img src="https://media2.giphy.com/media/1wQOwzKh7TKx4upFUT/source.gif"  alt="Image"> 
@@ -37,6 +35,5 @@
          
          </div>
 
-        <p><a href="{{url_for('submit_flavor')}}">to submit flavor</p>
     </body>
 </html>

@@ -14,7 +14,8 @@ def home():
     
 @app.route('/new_flavor', methods= ['GET', 'POST'])
 def create_flavor():
-	add_Flavor(request.form('name'),request.form('flavor'),request.form('add_ons'))
+	if request.method == "POST":
+		add_Flavor(request.form['name'],request.form['flavor'],request.form['add_on'])
 	return render_template("create_flavor1.html")
 
 @app.route('/vote')

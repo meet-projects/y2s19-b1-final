@@ -14,7 +14,7 @@ session = DBSession()
 
 # Your database functions are located under here (querying, adding items, etc.)
 
-def add_Flavor(name, add_ons, ice_cream_flavor):
+def add_Flavor(name, add_ons, flavor):
     print("Added a flavor!")
     new_ice_cream = Flavor(name=name, add_ons=add_ons, flavor=flavor)
     session.add(new_ice_cream)
