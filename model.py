@@ -32,5 +32,5 @@ class vote(Base):
 	__tablename__="votes"
 	id = Column(Integer, primary_key=True)
 	user = Column(String)
-	option Column(String)
+	option = Column(String)
 		
