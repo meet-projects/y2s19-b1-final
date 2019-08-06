@@ -24,7 +24,7 @@ def vote():
 
 @app.route('/submit_flavor', methods= ['GET', 'POST'])
 def submit_flavor():
-	
+	add_user(request.form['name'],request.form['email'],request.form['flavor_id'])
 	return render_template("submit_flavor.html")
 
 @app.route('/thanku', methods= ['GET', 'POST'])
