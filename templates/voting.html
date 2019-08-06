@@ -16,12 +16,14 @@
 
 
     <body>
-        <!-- action has to become submit vote intead of flavor for later -->
+ <h1> Vote for the flavor you like best!</h1>
         <div id="vote">
           <form action = "/vote" method = "POST">
+   
 
 
                   {% for f in flavors %}
+
        		<input type="radio" name="option" value="option">{{f.name}}
 
        		<button type="button" onclick="alert('{{f.name}} is a ice cream flavor made with {{f.add_ons}} and {{f.flavor}} ice cream')">+</button>
@@ -30,6 +32,7 @@
                   <br>
                   <br>
                 </form>
+        </div>
                   <div id="info">
                     <br>
                     
@@ -44,7 +47,7 @@
 
                   <br> 
                   <br>
-                  <a href ="https://www.benjerry.com/flavors" target="_blank"><img id="shop" src ="{{url_for('static',filename='submit.gif')}}" alt="Image"></a>                  <br>
+                  <a href ='/thanku' target="_blank"><img id="shop" src ="{{url_for('static',filename='submit.gif')}}" alt="Image"></a>                  <br>
                   <br>
                 </div>
        </form>

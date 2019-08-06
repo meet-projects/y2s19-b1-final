@@ -14,67 +14,54 @@
     <br>
     <br>
     <br>
-    <div id="everything">
-        
-
+        <div id = "Picking_options">
         <br>
         <form action = "/new_flavor" method = "post">
             Enter the ice cream flavor name: 
-            <br>
-            <br>
             <input type="text" name="name" placeholder="here" id="here">
             <br>
             <br>
-            <br>
-            <br>
-            <div id="col1">
-            Pick your flavor here!
+                <div id="pick_flavor">
+                Pick your flavor here!
 
+                <br>
+                <br>
+                <input type="radio" name = "flavor" value="strawberry">Strawberry
+                <input type="radio" name = "flavor" value="vanilla">Vanilla
+                <input type="radio" name = "flavor" value="chocolate">Chocolate
+                <input type="radio" name = "flavor" value="banana">Banana
+                <input type="radio" name = "flavor" value="flavor">Peanut butter
+                <input type="radio" name = "flavor" value="flavor">Cookie cream
+                <input type="radio" name = "flavor" value="flavor">Cherry
+                <input type="radio" name = "flavor" value="flavor">mint
+                <input type="radio" name = "flavor" value="flavor">Cheesecake
+                <input type="radio" name = "flavor" value="flavor">Pecan butter
+                <input type="radio" name = "flavor" value="flavor">Strawberry
+                </div>
             <br>
             <br>
-            <input type="radio" name = "flavor" value="strawberry">Strawberry
-            <br>
-            <input type="radio" name = "flavor" value="vanilla">Vanilla
-            <br>
-            <input type="radio" name = "flavor" value="chocolate">Chocolate
-            <br>
-            <input type="radio" name = "flavor" value="banana">Banana <br>
-            <input type="radio" name = "flavor" value="flavor">Peanut butter <br>
-            <input type="radio" name = "flavor" value="flavor">Cookie cream <br>
-            <input type="radio" name = "flavor" value="flavor">Cherry <br>
-            <input type="radio" name = "flavor" value="flavor">Mint <br>
-            <input type="radio" name = "flavor" value="flavor">Cheesecake <br>
-            <input type="radio" name = "flavor" value="flavor">Pecan <br>butter
-            <input type="radio" name = "flavor" value="flavor">Strawberry <br>
-            </div>
-            <div id="col2">
+                <div id= "pick_addons">
+                Pick you add ons here!
+                <br>
+                <br>
+                <input type="radio" name="add_on" value="cookie dough"> cookie dough
+                <input type="radio" name="add_on" value="fudge brownies">fudge brownies
+                <input type="radio" name="add_on" value="hazelnut"> Waffle cones
+                <input type="radio" name="add_on" value="caramel">Caramel swirls
+                <input type="radio" name="add_on" value="strawberry">Strawberry swirls
+                <input type="radio" name="add_on" value="peanut">Peanut butter
+                  <input type="radio" name="add_on" value="cherry">Cherry
+              </div>
             <br>
             <br>
-            Pick you add ons here!
-            <br>
-            <br>
-            <input type="radio" name="add_on" value="cookie dough"> cookie dough <br>
-            <input type="radio" name="add_on" value="fudge brownies">fudge brownies<br>
-            <input type="radio" name="add_on" value="hazelnut"> Waffle cones<br>
-            <input type="radio" name="add_on" value="caramel">Caramel swirls<br>
-            <input type="radio" name="add_on" value="strawberry">Strawberry swirls<br>
-            <input type="radio" name="add_on" value="peanut">Peanut butter<br>
-              <input type="radio" name="add_on" value="cherry">Cherry
-            <br>
-            <!-- <br>
-            <a href ="/submit" target="_blank"><img id="shop" src ="{{url_for('static',filename='submit.gif')}}" alt="Image"></a>
-            <br> -->
-           <!--  First Name
-            <input type="text" name="name" placeholder="First Name" class="name_space"> -->
-            <input type='submit' value="Submit" class="name_space" > 
-
-        </form>
+            <a href ="/thanku" target="_blank"><img id="shop" src ="{{url_for('static',filename='submit.gif')}}" alt="Image"></a>
+    </form>
       <!--   <img src="https://media1.giphy.com/media/3Xyr8g10g5TWCwZ7aI/source.gif" alt="Image"> 
         <img src="https://media2.giphy.com/media/1wQOwzKh7TKx4upFUT/source.gif"  alt="Image"> 
         <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-08/26/3/enhanced/webdr05/anigif_enhanced-21648-1440573942-4.gif" alt="Image">
         <img src="https://www.villagevoice.com/wp-content/uploads/2009/04/cone.gif" alt="Image"> -->
          
          </div>
-     </div>
+
     </body>
 </html>

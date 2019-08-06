@@ -7,6 +7,11 @@
 body {
 	background-image: url("bg.png") ;
 }
+h1 {
+	text-align:center;
+	font-family:"Maiden Orange" ;
+	font-size:70px;
+}
 #info {
 
 	text-align: center;
@@ -18,9 +23,11 @@ body {
 
 }
 #vote {
-	text-align: center;
+	text-align: left;
 	font-family: "Maiden Orange";
 	font-size: 60px;
+	margin-left: 30%;
+
 
 }
 #logo {
