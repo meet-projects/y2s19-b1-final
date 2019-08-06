@@ -6,7 +6,7 @@ from flask import session as login_session
 # Add functions you need from databases.py to the next line!
 from databases import *
 
-# Starting the flask app
+# Starting the flask App
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "Your_secret_string"
 # App routing code here
