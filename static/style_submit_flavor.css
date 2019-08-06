@@ -16,6 +16,9 @@ h2 {
 	text-align: center;
 	background-color: #4dd7fa;
 	font-size:70px;
+	margin-left:10%;
+	margin-right:10%;
+
 }
 
 .name_space{
@@ -23,6 +26,7 @@ h2 {
 	height:50px;
 	font-size:30px;
 }
+
 
 body {
 	background-image: url("bg.png") ;
