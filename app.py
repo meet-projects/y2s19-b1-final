@@ -6,7 +6,7 @@ from databases import add_Flavor, add_user, get_all_flavors
 
 # Starting the flask app
 app = Flask(__name__)
-
+app.config['SECRET_KEY'] = "Your_secret_string"
 # App routing code here
 @app.route('/')
 def home():
@@ -15,7 +15,8 @@ def home():
 @app.route('/new_flavor', methods= ['GET', 'POST'])
 def create_flavor():
 	if request.method == "POST":
-		add_Flavor(request.form['name'],request.form['flavor'],request.form['add_on'])
+		session['flavor_id'] = add_Flavor(request.form['name'],request.form['flavor'],request.form['add_on'])
+		return render_template('submit_flavor.html')
 	return render_template("create_flavor1.html")
 
 @app.route('/vote')
@@ -24,7 +25,9 @@ def vote():
 
 @app.route('/submit_flavor', methods= ['GET', 'POST'])
 def submit_flavor():
-	add_user(request.form['name'],request.form['email'],request.form['flavor_id'])
+	if request.method == "POST":
+		add_user(request.form['name'],request.form['email'], session['flavor_id'])
+		return render_template('thanku.html')
 	return render_template("submit_flavor.html")
 
 @app.route('/thanku', methods= ['GET', 'POST'])
