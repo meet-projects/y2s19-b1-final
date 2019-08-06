@@ -23,13 +23,17 @@
 }
 
 #col1{
-	margin-left:0;
-	margin-right:50%;
+	position:relative;
+	right:25%;
+	border-top:10px;
 
 }
 #col2 {
-	margin-left:50%;
-	margin-top: 0%;
+	position:relative;
+	left: 25%;
+	top: 80%;
+	bottom: 20%;
+
 	
 }
 
@@ -39,6 +43,7 @@ height: 40px;
 font-size:30px;
 font-family: "Maiden Orange"
 }
+
 #submit{
 width: 400px;
 height: 100px;
@@ -52,7 +57,7 @@ body{
 	background-image: url("bg.png");
 }
 a{
-		display: block;
+	display: block;
 	margin-left: auto;
   	margin-right: auto;
 }
