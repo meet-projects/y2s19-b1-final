@@ -43,10 +43,14 @@ font-family: "Maiden Orange";
 #email{
 	width: 250px;
 	height: 30px;
+	font-size: 30px;	
+	font-family: "Maiden Orange";
 }
 
 #name{
-	width: 250px;
+	width: 340px;
 	height: 30px;
+	font-size: 30px;	
+	font-family: "Maiden Orange";
 }
 
