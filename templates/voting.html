@@ -9,10 +9,13 @@
         <!-- action has to become submit vote intead of flavor for later -->
           <form action = "/vote" method = "POST">
 
+
                   {% for f in flavors %}
        		<input type="radio" name="option" value="option">{{f.name}}
+
        		<button>+</button>
                   {% endfor %}
+                  <br>
                   <br>
                   Please insert your information to save your choice!
                   <br>
