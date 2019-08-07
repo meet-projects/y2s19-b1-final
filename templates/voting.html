@@ -17,6 +17,8 @@
 
     <body>
  <h1> Vote for the flavor you like best!</h1>
+ <br>
+ <br>
         <div id="vote">
           <form action = "/vote" method = "POST">
    
@@ -24,7 +26,7 @@
 
                   {% for f in flavors %}
 
-       		<input type="radio" name="option" value="option">{{f.name}}
+       		<input type="radio" name="option" value="option" id="radio_button">{{f.name}}
        		<button type="button" onclick="alert('{{f.name}} is a ice cream flavor made with {{f.add_ons}} and {{f.flavor}} ice cream')">+</button>
                   <br>
                   {% endfor %}
@@ -32,6 +34,9 @@
                   <br>
                 </form>
         </div>
+                  <br>
+                  <br>
+                  <br>
                   <div id="info">
                     <br>
                     
@@ -41,15 +46,18 @@
                   First Name
                   <input type="text" name="name" placeholder="First Name" id="name">
                    <br>
+                   <br>
                   Email Address
                   <input type="text" name="user_email" placeholder="Email Address" id="email">
 
                   <br> 
                   <br>
-                  <a href ="/submit" target="_blank"><img id="shop" src ="{{url_for('static',filename='submit.gif')}}" alt="Image"></a>                  <br>
+                  <a href ="/submit" target="_blank"><img id="shop" src ="{{url_for('static',filename='submit.gif')}}" alt="Image"></a>      <br>
                   <br>
                 </div>
-       </form>
-      
+       </form>      
     </body>
+    <br>
+    <br>
+    <br>
 </html>

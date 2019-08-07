@@ -16,8 +16,9 @@
 body {
 	background-image: url("bg.png") ;
 	background-color:#4dd7fa;
-	font-family: "chunk_rethunkregular","Arial Black","Arial","sans-serif";
+	/*font-family: "chunk_rethunkregular","Arial Black","Arial","sans-serif";*/
 	text-align:center;
+	font-family: "Maiden Orange";
 	font-size:50px;
 	margin-left:15%;
 	margin-right:15%;
