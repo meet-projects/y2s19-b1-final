@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 
 # You can change the name of your database, just change project.db to whatever you want (make sure to include .db at the end!)
 # Make sure you have the same name for the database in the app.py file!
-engine = create_engine('sqlite:///project.db')
+engine = create_engine('sqlite:///project.db?check_same_thread=False')
 Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
@@ -22,6 +22,7 @@ def add_Flavor(name, add_ons, flavor):
 
 def add_user(name,email, flavor_id):
     """Add a user to the DB."""
+    print("+++" + str(flavor_id))
     user = User(username=name, email=email, flavor_id=flavor_id)
     session.add(user)
     session.commit()

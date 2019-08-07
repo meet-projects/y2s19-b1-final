@@ -16,13 +16,15 @@ def home():
     
 @app.route('/new_flavor', methods= ['GET', 'POST'])
 def create_flavor():
+	print("create flavor " + request.method)
 	if request.method == "POST":
-		login_session['flavor_id'] = add_Flavor(request.form['name'],request.form['flavor'],request.form['add_on'])
+		login_session['flavor_id'] = add_Flavor(request.form['name'],request.form['add_on'],request.form['flavor'])
 		return render_template('submit_flavor.html')
 	return render_template("create_flavor1.html")
 
 @app.route('/submit_flavor', methods= ['GET', 'POST'])
 def submit_flavor():
+	print("submit flavor " + request.method)
 	if request.method == "POST":
 		add_user(request.form['name'],request.form['email'], login_session['flavor_id'])
 		return render_template('thanku.html')
