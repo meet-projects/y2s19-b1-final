@@ -26,8 +26,14 @@
 
                   {% for f in flavors %}
 
-       		<input type="radio" name="option" value="option" id="radio_button">{{f.name}}
+
+       		<input type="radio" name="option" value="option" id="{{f.id}}_id">
+                  <label for="{{f.id}}_id">{{f.name}}</label>
+       		<button type="button" onclick="alert('{{f.name}} is a ice cream flavor made with {{f.add_ons}} and {{f.flavor}} ice cream')">+</button>
+
+       		<!-- <input type="radio" name="option" value="option" id="radio_button">{{f.name}}
        		<button type="button" onclick="alert('{{f.name}} is an ice cream flavor made with {{f.add_ons}} and {{f.flavor}} ice cream')">+</button>
+ -->
                   <br>
                   {% endfor %}
                   <br>
